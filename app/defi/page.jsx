@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Loading from '@/components/loading'
+import Loading from '@/components/Loading'
 import DefiCard from "@/components/DefiCard"
 
 
