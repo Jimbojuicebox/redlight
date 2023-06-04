@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@thirdweb-dev/react": "^3.12.4",
+    "@thirdweb-dev/sdk": "^3.10.19",
     "autoprefixer": "10.4.14",
+    "ethers": "^5.7.2",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.2",
     "next": "13.4.4",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
     "tailwindcss": "3.3.2"
   }
 }

@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.main {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.slimmain {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.videocontainer {
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.arrowup {
+  transform: translateY(4px);
+}
+
+.projpic {
+  min-width: 300px;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 10px;
+  object-fit: contain;
+  background: radial-gradient(circle, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%);
+}
+
+.stakeinput {
+  max-width: 100px;
+}
+
+.peakinput {
+  max-width: 50px;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.connectbtn {
+  @apply text-red-700 font-semibold bg-white py-1 px-4 rounded-lg;
 }
