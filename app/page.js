@@ -1,6 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
 
+export const metadata = {
+  title: 'Redlight Directory',
+  keywords: ['Redlight', 'Blockchain', 'crypto', 'gasless', 'gas free', 'zero gas', 'next gen'],
+  description: 'Listing everything on the Redlight Network, the only truly gasless blockchain.',
+  icons: [
+      {
+          rel: 'icon',
+          url: '/favicon.ico'
+      }
+  ]
+}
+
 export default function Home() {
   return (
     <main>

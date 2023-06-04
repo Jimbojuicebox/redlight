@@ -11,8 +11,9 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import NavMenu from './NavMenu'
 
 
-const Navbar = ({ openMenu, setOpenMenu }) => {
+const Navbar = () => {
 
+    const [openMenu, setOpenMenu] = useState(false)
     const connectWithMetamask = useMetamask()
     const disconnect = useDisconnect()
     const pathname = usePathname()
